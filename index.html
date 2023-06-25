@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <div class="container">
+        <div class="converter">
+            <label for="inputUnit">Input:</label>
+            <input type="number" id="inputUnit" placeholder="Enter a value">
+            
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="cm">Centimeters</option>
+                <option value="inch">Inches</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="kg">Kilograms</option>
+                <option value="lb">Pounds</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="cm">Centimeters</option>
+                <option value="inch">Inches</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="kg">Kilograms</option>
+                <option value="lb">Pounds</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            
+            <button onclick="convert()">Convert</button>
+            
+            <label for="outputUnit">Output:</label>
+            <input type="text" id="outputUnit" disabled>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
